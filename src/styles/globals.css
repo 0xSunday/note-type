@@ -2,10 +2,47 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
   background-image: url("/bg2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  margin: 10px 30px;
+}
 
+.input {
+  flex-direction: row;
+  display: flex;
+  width: 95%;
+  position: relative;
+  align-items: center;
+}
+
+.input__box {
+  width: 100%;
+  border-radius: 50px;
+  padding: 20px 30px;
+  font-size: 25px;
+  border: none;
+  transition: 0.2s;
+  box-shadow: inset 0 0 5px black;
+}
+
+.input__box:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.input_submit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  right: 0px;
+  border: none;
+  font-size: 15px;
+  background-color: #2f74c0;
+  color: white;
+  transition: 0.2s all;
+  box-shadow: 0 0 10px black;
 }
